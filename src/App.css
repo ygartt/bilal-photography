@@ -42,3 +42,13 @@ html.lenis body {
   width: 100%;
   position: relative;
 }
+
+::selection {
+  background-color: #e2a971;
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background-color: #e2a971;
+  color: #ffffff;
+}

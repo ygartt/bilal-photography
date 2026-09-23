@@ -46,7 +46,7 @@ const Contact = () => {
   const contactInfos = [
     {
       id: "instagram",
-      text: "@bilal_art_photography",
+      text: "bilal_art_photography",
       url: "https://www.instagram.com/bilal_art_photography",
       icon: (
         <svg
