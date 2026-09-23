@@ -1,0 +1,137 @@
+.home-container {
+  width: 100%;
+  position: relative;
+}
+
+.home-logo {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 10%;
+  z-index: 10;
+}
+
+.home-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 10;
+}
+
+.home-left {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 14vh;
+}
+
+.home-desc {
+  color: #ffffff;
+  font-size: 11px;
+  margin-right: 15%;
+  width: 53%;
+  text-align: justify;
+  text-align-last: right;
+  font-family: "MyriadPro", sans-serif;
+}
+
+.home-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.home-title {
+  color: #e2a971;
+  text-transform: uppercase;
+  font-size: 5vh;
+  white-space: pre-wrap;
+  margin-left: 15%;
+  line-height: 1.1;
+  font-family: "WarHeroes", sans-serif;
+}
+
+@media (max-width: 1024px) {
+  .home-logo {
+    width: 15%;
+  }
+
+  .home-left {
+    margin-top: 10vh;
+  }
+
+  .home-desc {
+    width: 70%;
+    margin-right: 10%;
+    font-size: 10px;
+  }
+
+  .home-title {
+    font-size: 3.5vh;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .home-bg {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .home-logo {
+    width: 25%;
+    top: 3%;
+  }
+
+  .home-content {
+    flex-direction: column-reverse;
+    height: 100%;
+    justify-content: center;
+    gap: 4vh;
+  }
+
+  .home-left {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .home-desc {
+    width: 40vh;
+    margin-right: 0;
+    text-align: justify;
+    text-align-last: right;
+    font-size: 10px;
+  }
+
+  .home-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .home-title {
+    margin-left: 0;
+    font-size: 3vh;
+    text-align: center;
+  }
+}

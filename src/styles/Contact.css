@@ -1,0 +1,181 @@
+.contact-container {
+  width: 100%;
+  position: relative;
+}
+
+.contact-image-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-image-front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 3;
+  display: block;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.contact-title-wrapper {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  z-index: 2;
+}
+
+.contact-title {
+  width: 100%;
+  text-align: center;
+  color: #e2a971;
+  text-transform: uppercase;
+  font-size: 10vw;
+  white-space: pre-wrap;
+  font-family: "WarHeroes", sans-serif;
+  margin: 0;
+  line-height: 1;
+}
+
+.contact-bottom-section {
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 10;
+}
+
+.contact-bottom-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+  align-items: flex-start;
+}
+
+.contact-info-link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info-link:hover {
+  color: #e2a971;
+}
+
+.contact-icon svg {
+  width: 14px;
+  height: 14px;
+  display: block;
+}
+
+.contact-text {
+  font-family: "MyriadPro", sans-serif;
+  font-size: 11px;
+}
+
+.contact-bottom-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.contact-desc {
+  color: #ffffff;
+  font-size: 11px;
+  width: 66%;
+  text-align: justify;
+  text-align-last: right;
+  font-family: "MyriadPro", sans-serif;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .contact-title-wrapper,
+  .contact-bottom-section {
+    width: 80%;
+  }
+
+  .contact-title {
+    font-size: 12vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .contact-image-bg,
+  .contact-image-front {
+    height: 100%;
+    width: auto;
+    max-width: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: unset;
+  }
+
+  .contact-title-wrapper {
+    width: 90%;
+    top: 45%;
+  }
+
+  .contact-title {
+    font-size: 6.5vh;
+  }
+
+  .contact-bottom-section {
+    top: 50%;
+    width: 44vh;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 3vh;
+  }
+
+  .contact-bottom-left {
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 5vw;
+  }
+
+  .contact-text {
+    display: none;
+  }
+
+  .contact-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-bottom-right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-desc {
+    width: 85%;
+    text-align: justify;
+    text-align-last: center;
+    font-size: 10px;
+  }
+}

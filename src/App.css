@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "MyriadPro";
+  src: url("/fonts/MyriadPro.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "WarHeroes";
+  src: url("/fonts/WarHeroes.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: black;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.1) 100%),
+    url("/imgs/BG.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overscroll-behavior: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.snap-section {
+  width: 100%;
+  position: relative;
+}

@@ -1,0 +1,48 @@
+.works-wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.works-container {
+  display: flex;
+  height: 100%;
+  width: max-content;
+}
+
+.work-slide {
+  height: 100vh;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.work-image {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .works-wrapper,
+  .work-slide {
+    height: 100svh;
+  }
+}
+
+@media (max-width: 768px) {
+  .works-wrapper,
+  .work-slide {
+    height: 100svh;
+  }
+
+  .work-slide {
+    width: auto;
+  }
+
+  .work-image {
+    height: 100%;
+    width: auto;
+    display: block;
+  }
+}
